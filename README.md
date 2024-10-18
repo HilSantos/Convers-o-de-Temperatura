@@ -19,27 +19,35 @@ namespace ConversaoTemperatura
         static void Main(string[] args)
         {
             Double Celsius, Fahrenheit, Kelvin;
-            string Temperatura;
-            decimal º;
 
-            Console.WriteLine("Informe a Temperatura em Celsius: ");
-            Temperatura = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine("Informe a Temperatura em Celsius: ");
+            Celsius = Convert.ToDouble(Console.ReadLine());
+
             Fahrenheit = (Celsius * 9/5) + 32;
             Kelvin = (Celsius + 273.15);
+
+
             Console.WriteLine("Exiba o resultado " + Celsius + "para" + Fahrenheit + Kelvin);
 
-            if ( Temperatura <= 0ºC)
-                {
+            if (Celsius <= 0)
+            {
                 Console.WriteLine("Muito Fria");
             }
-            else if ( Temperatura entre 0ºC e 30ºC)
-                {
+            else if (Celsius >= 0 && Celsius < 30)
+            {
                 Console.WriteLine("Moderada");
             }
-            else ( Temperatura >= 30ºC)
+            else (Celsius > 30)
                 {
                 Console.WriteLine("Muito Quente");
             }
+
+
+            Console.ReadKey();
+        }
+    }
+}
 
 
             Console.ReadKey();
