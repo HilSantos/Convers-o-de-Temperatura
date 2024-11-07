@@ -1,4 +1,5 @@
-# Converter-Temperatura
+# Celsius Fahrenheit Kelvin
+
 Crie um programa que solicite ao usuario, uma temperatura em graus Celsius, e a converta em Fahrenheit e Kelvin. Utilize as formulas:
 Fahrenheit = (Celsius * 9/5) + 32
 Kelvin = Celsius + 273.15. Exiba os resultados no console e utilize if...else para exibir uma mensagem, dizendo se a temperatura está "Muito fria", "Moderada" ou "Muito quente":
